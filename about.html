@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SheCodes Portfolio</title>
+    <meta
+      name="description"
+      content="Alex is a front-end engineer based in Maryland."
+    />
+    <title>Front-end developer - Alex Huffman</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -17,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/homepage.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
@@ -32,27 +36,36 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Alex Huffman</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+   <div class="container">
+     <nav class="d-flex justify-content-between">
+      <a href="/" title="Homepage">
+        <img
+          src="images/logo.png"
+          class="logo d-none d-md-block"
+          alt="Alex Logo"
+        />
+        <img
+          src="images/logo-small.jpg"
+          class="logo d-block d-md-none"
+          alt="Alex Logo"
+        />
+      </a>
+      <ul>
+        <li>
+          <a href="/" title="Homepage"> Home</a>
+        </li>
+        <li class="active">
+          <a href="/about.html" title="About Me"> About</a>
+        </li>
+        <li>
+          <a href="/work.html" title="My work"> Work</a>
+        </li>
+        <li>
+          <a href="/contact.html" title="Contact Me"> Contact</a>
+        </li>
+      </ul>
     </nav>
+  </div> 
 
     <div class="about-section container">
       <div class="row">
@@ -69,11 +82,51 @@
      </div>
     </div>
 
-    <div class="about-section contact-me">
-        <h3>Work Inquiry</h3>
-        <p>Let's work together. Send me a message with a brief description of the project you have in mind.</p>
-        <a class="btn btn-branding" href="">Let's chat</a>
-    </div>
+
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p class="text-muted">Let's work together. Send me a message with a brief description of the project you have in mind.</p>
+        </div>
+        <div>
+          <a
+            href="/contact.html"
+            class="btn btn-branding mt-3"
+            title="Contact Me"
+          >
+            Contact me
+          </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a
+          href="mailto: alexandra.a.huffman@gmail.com"
+          class="email-link"
+          title="Email Me"
+        >
+          alexandra.a.huffman@gmail.com
+        </a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://www.github.com/alxhuff"
+          target="_blank"
+          title="GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p class="text-center mt-5">
+        ✌️ This website was coded by Alex Huffman, and is
+        <a
+          href=""
+          target="_blank"
+        >
+          open-sourced
+        </a>
+      </p>
+    </footer>
   </body>
 
   </html>
